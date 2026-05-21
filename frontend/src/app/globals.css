@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #050816;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: cyan;
+    border-radius: 10px;
+}
+
+/* GLOW EFFECT */
+
+.glow {
+    box-shadow:
+        0 0 10px cyan,
+        0 0 20px cyan;
+}
+
+/* GLASS EFFECT */
+
+.glass {
+    background: rgba(255,255,255,0.05);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ANIMATED GRID */
+
+.grid-bg {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+
+    background-size: 40px 40px;
+}
